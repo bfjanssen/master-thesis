@@ -4,7 +4,7 @@ CONTINUOUS = -pvc -view=default -halt-on-error
 
 DOCUMENT   := document
 OUTPUT     := $(DOCUMENT)
-RESEARCHR  := b0402c72-980f-6580-6b0e-7a614ed2d64c-master-thesis
+RESEARCHR  := c964adad-9219-4238-a260-0f9df2e12bce-master-thesis
 SRCDIR     := src
 FIGDIR     := src/fig
 IMGDIR     := src/img
@@ -42,7 +42,7 @@ watch:
 bib: clean-bib $(SRCBIB) fix-bib
 
 $(SRCBIB):
-	curl https://researchr.org/downloadbibtex/bibliography/$(RESEARCHR)/compact -o $(SRCBIB)
+	curl https://researchr.org/downloadbibtex/bibliography/$(RESEARCHR)/full -o $(SRCBIB)
 
 fix-bib: $(SRCBIB)
 	sed -i '' '1 s/^/% /' $(SRCBIB)
