@@ -11,6 +11,8 @@ Statix is a meta-language that is part of the Spoofax language designer workbenc
 The role Statix of in Spoofax is to specify a set of constraints on an abstract syntax tree (AST) of the language that represent the static semantics of the designed language. The intermediate representation is usually a parsed and possibly desugared AST of the designed language.
 The Statix specification gets normalized (see chapter \ref{chap:statix-compiler}) to a spec file format, which can together with the object language AST be fed to the Statix solver to be solved. The Statix solver results in an analysis result that contains type information, such as the types of terms and possibly error messages when the constraints can't be fully solved.
 
+\section{Why bootstrap Statix?}
+
 \section{Introduction to Statix}
 
 \subsection{Typing rules}
